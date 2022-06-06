@@ -10,7 +10,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: '123456qA'
       MYSQL_DATABASE: 'db_django'
-      MYSQL_USER: 'root'
       MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'password'
     restart: always
@@ -19,10 +18,11 @@ services:
   web:
     restart: always
     build: .
-    command: sh -c "sleep 10 && python manage.py runserver 0.0.0.0:8000"
+    command: sh -c "sleep 30 && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - /evrika_test
     ports:
       - '8000:8000'
     depends_on:
       - db
+  
