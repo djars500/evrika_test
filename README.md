@@ -44,7 +44,12 @@ http://127.0.0.1:8000/api/token/ - Авторизация через jwt
  Ниже предоставлена ссылка с примерами для работы с API
    <br/>
   <code>https://www.postman.com/spacecraft-geologist-5341972/workspace/evrika-test/collection/19235221-4acbd506-1115-4ff3-8711-8c4afbc57a3e?action=share&creator=19235221</code>
+  
+  Для прикрепления токена авторизации используйте переменную {{access_token}}
 
+
+Отредактируйте значение переменной на свой токен
+<img width="1429" alt="Снимок экрана 2022-06-06 в 11 21 56" src="https://user-images.githubusercontent.com/67388370/172099803-287d16f0-f115-46b3-af28-150686a8ed7f.png">
 
 
   
