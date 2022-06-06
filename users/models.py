@@ -4,8 +4,7 @@ from django.contrib.auth.models import (
 	AbstractBaseUser,PermissionsMixin
 )
 from .managers import UserManager
-from datetime import datetime, timedelta
-from django.conf import settings
+
 
 
 class User(AbstractBaseUser, PermissionsMixin):
